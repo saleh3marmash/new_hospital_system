@@ -1,0 +1,238 @@
+{
+	"info": {
+		"_postman_id": "48a41759-72d5-45bd-a06c-6d95ac3352f5",
+		"name": "Hospital API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "27561080"
+	},
+	"item": [
+		{
+			"name": "Get all Persons",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/api/getPersons"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all Doctors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/api/getDoctors"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all Patients",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/api/getPatients"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all Hospitals",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/api/getHospitals"
+			},
+			"response": []
+		},
+		{
+			"name": "Add a person",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": \"2\",\r\n        \"name\": \"maleh\",\r\n        \"gender\": true,\r\n        \"phoneNumber\": \"0527083059\",\r\n        \"birthDate\": \"10/11/2000\",\r\n        \"address\": \"Kofar Akab\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/api/addPerson"
+			},
+			"response": []
+		},
+		{
+			"name": "Add a doctor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": \"2\",\r\n        \"name\": \"maleh\",\r\n        \"gender\": true,\r\n        \"phoneNumber\": \"0527083059\",\r\n        \"birthDate\": \"10/11/2000\",\r\n        \"address\": \"Kofar Akab\",\r\n        \"doctorId\": \"1\",\r\n        \"speciality\": \"a3sab\",\r\n        \"certification\": \"bachloria\",\r\n        \"workingHours\": \"8\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/api/addDoctor"
+			},
+			"response": []
+		},
+		{
+			"name": "Add a patient",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": \"2\",\r\n        \"name\": \"maleh\",\r\n        \"gender\": true,\r\n        \"phoneNumber\": \"0527083059\",\r\n        \"birthDate\": \"10/11/2000\",\r\n        \"address\": \"Kofar Akab\",\r\n        \"patientId\": \"1192200\",\r\n        \"sickness\": \"A3sab\",\r\n        \"prescription\": \"Bachloria\",\r\n        \"allergies\": \"5\",\r\n        \"specialReq\": \"need toast\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/api/addPatient"
+			},
+			"response": []
+		},
+		{
+			"name": "Add Hospital",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": \"2\",\r\n        \"name\": \"maleh\",\r\n        \"address\": \"Kofar Akab\",\r\n        \"phoneNumber\": \"0527083059\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/api/addHospital"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Person by ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/api/getPerson/2"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Doctor by doctorId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/api/getDoctor/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Patient by patientId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/api/getPatient/2"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Hospital by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/api/getHospital/2"
+			},
+			"response": []
+		},
+		{
+			"name": "Change Person Name by his ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": "localhost:8080/api/changeName/2/Ahmad"
+			},
+			"response": []
+		},
+		{
+			"name": "Change Doctor Name by his doctorId",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": "localhost:8080/api/changeDoctorName/1/Ahmad"
+			},
+			"response": []
+		},
+		{
+			"name": "Change Patient Name by patientId",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": "localhost:8080/api/changePatientName/2/Ahmad"
+			},
+			"response": []
+		},
+		{
+			"name": "Change Hospital Name by it's ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": "localhost:8080/api/changeHospitalName/2/Ahmad"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Person by his id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "localhost:8080/api/deletePerson/2"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Doctor by his doctorId",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "localhost:8080/api/deleteDoctor/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Patient by his patientId",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "localhost:8080/api/deletePatient/2"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Hospital by it's id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "localhost:8080/api/deleteHospital/2"
+			},
+			"response": []
+		}
+	]
+}
